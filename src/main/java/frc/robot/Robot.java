@@ -22,7 +22,6 @@ import java.util.HashMap;
 import com.ctre.phoenix.motorcontrol.NeutralMode;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.RelativeEncoder;
-import com.revrobotics.CANSparkMax.ControlType;
 
 import frc.robot.PIDMotors.PIDSparkMax;
 
@@ -111,7 +110,7 @@ public class Robot extends TimedRobot {
     public void robotInit() {
         // Initialize objects
         driverController = new XBoxController(0);
-        operatorController = new LogitechExtreme3DProController(1);
+        //operatorController = new LogitechExtreme3DProController(1);
 
         // Left Falcon motor(s)
         l0 = new PIDTalonFX(2); //14
